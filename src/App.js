@@ -1,23 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import Nav from './Nav';
+import Main from './Main';
+import { useEffect, useState } from 'react';
 
 function App() {
+  const [mouseCoor, setMouseCoor] = useState({ x: -100, y: -100 });
+
+  const hoverHandler = (e) => {
+    const { pageX, pageY } = e;
+
+    // to enhance a lil bit the performance
+    if (
+      pageX + 10 > mouseCoor.x ||
+      pageX - 10 < mouseCoor.x ||
+      pageY + 10 > mouseCoor.y ||
+      pageY - 10 < mouseCoor.y
+    ) {
+      setMouseCoor({ x: Number(pageX), y: Number(pageY) });
+    }
+  };
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div onMouseMove={hoverHandler}>
+      <div
+        className="hovering-effect-div absolute z-10"
+        style={{ top: `${mouseCoor.y}px`, left: `${mouseCoor.x}px` }}
+      ></div>
+      <Nav />
+      <Main />
     </div>
   );
 }

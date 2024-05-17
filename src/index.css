@@ -1,13 +1,93 @@
-body {
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --colors-clr-1: #010013;
+  --colors-clr-2: #0026ff;
+  --colors-clr-3: #01107c;
+  --colors-clr-4: #021db4;
+  --colors-clr-5: #000730;
+}
+* {
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Poppins', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/****************************************** Nav *****************************************/
+
+.hiddenNav {
+  transform: translateY(-100%);
+}
+nav li {
+  text-shadow: 0 0 1.5px rgba(255, 255, 255, 1);
+}
+
+nav li:hover {
+  color: var(--colors-clr-2);
+  text-shadow: none;
+  transition: all 300ms ease-in-out;
+}
+
+nav svg {
+  transition: all 300ms ease-in-out;
+}
+
+/****************************************** Main *****************************************/
+
+.hovering-effect-div {
+  width: 0px;
+  height: 0px;
+  box-shadow: 0 0 350px 200px var(--colors-clr-4);
+  opacity: 0.4;
+}
+
+@keyframes blink {
+  from {
+    border-color: transparent;
+  }
+  to {
+    border-color: var(--colors-clr-2);
+  }
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+.typed-out {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 0.15em solid var(--colors-clr-2);
+  width: 0;
+  animation: typing 2.5s steps(20, end) forwards, blink 0.9s infinite;
+}
+
+.career-card {
+  background: linear-gradient(
+    141deg,
+    var(--colors-clr-1) -4.73%,
+    var(--colors-clr-2) 48.79%,
+    var(--colors-clr-3) 71.99%,
+    var(--colors-clr-4) 120.81%,
+    var(--colors-clr-5) 213.56%
+  );
+  background-position: 100%;
+  background-size: 150%;
+  border-radius: 0.7975rem;
+  transition: 0.3s ease-in-out;
+}
+.career-card:hover {
+  background-position: 20%;
 }
