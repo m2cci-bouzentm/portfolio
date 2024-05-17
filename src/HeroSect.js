@@ -3,11 +3,11 @@ import ShowText from './ShowText';
 
 const HeroSect = ({ showText }) => {
   return (
-    <div id='about' className="hero-sect py-10 px-52 space-y-16 font-extrabold relative z-10">
+    <div id='about' className="hero-sect h-[150vh] py-20 px-52 space-y-20 font-extrabold relative z-10">
       <div className="hero-text text-[5rem] my-8">
         Hello, I'm <span className="text-clr-2">MOHAMED</span> !
       </div>
-      <div className="hero-desc ">
+      <div className="hero-desc">
         <div className="my-6">A developer who </div>
         <div className="text-[3rem]">Bridges the gap between</div>
         <div className="text-[3rem]">

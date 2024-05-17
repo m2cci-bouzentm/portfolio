@@ -8,7 +8,7 @@
   --colors-clr-2: #0026ff;
   --colors-clr-3: #01107c;
   --colors-clr-4: #021db4;
-  --colors-clr-5: #000730;
+  --colors-clr-5: #000715;
 }
 * {
   padding: 0;
@@ -46,7 +46,7 @@ nav svg {
 .hovering-effect-div {
   width: 0px;
   height: 0px;
-  box-shadow: 0 0 350px 200px var(--colors-clr-4);
+  box-shadow: 0 0 350px 250px var(--colors-clr-4);
   opacity: 0.4;
 }
 
@@ -90,4 +90,15 @@ nav svg {
 }
 .career-card:hover {
   background-position: 20%;
+}
+
+#skills img {
+  width: 60px;
+  height: 60px;
+}
+#skills .grid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 1rem;
+  row-gap: 2rem;
 }
