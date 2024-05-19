@@ -4,9 +4,9 @@ const Biography = () => {
   return (
     <div
       id="biography"
-      className="felx flex-col justify-center items-center text-justify h-[100vh] max-w-[55%] mx-auto space-y-10 text-[1.5rem] font-extrabold relative z-10"
+      className="flex flex-col justify-center items-center text-justify h-[100vh] max-w-[55%] mx-auto space-y-10 text-[1.5rem] font-extrabold relative z-10"
     >
-      <h1 className="text-[4rem] text-clr-2">Biography</h1>
+      <h1 className="self-start text-[4rem] text-clr-2">Biography</h1>
       <p>
         I'm a 22 years old full-stack developer & a software engineer hooked on
         mastering the latest in web tech and currently interested in Web

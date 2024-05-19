@@ -33,11 +33,11 @@ const Skillset = () => {
   return (
     <div
       id="skills"
-      className="felx flex-col justify-center items-center text-justify h-[100vh] max-w-[55%] mx-auto space-y-4 text-[1.5rem] font-extrabold relative z-10"
+      className="flex flex-col justify-center items-center text-justify h-[100vh] max-w-[55%] mx-auto space-y-4 text-[1.5rem] font-extrabold relative z-10"
     >
-      <h1 className="text-[4rem] text-clr-2">Skillset</h1>
+      <h1 className="self-start text-[4rem] text-clr-2">Skillset</h1>
 
-      <div className="grid p-10">
+      <div className="grid py-10 saturate-200">
         <img src={htmlIcon} alt="html-icon" title="HTML" />
         <img src={cssIcon} alt="css-icon" title='CSS' />
         <img src={jsIcon} alt="js-icon" title='javascript' />

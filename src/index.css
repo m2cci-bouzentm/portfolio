@@ -8,7 +8,7 @@
   --colors-clr-2: #0026ff;
   --colors-clr-3: #01107c;
   --colors-clr-4: #021db4;
-  --colors-clr-5: #000715;
+  --colors-clr-5: #000720;
 }
 * {
   padding: 0;
@@ -99,6 +99,6 @@ nav svg {
 #skills .grid {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
-  gap: 1rem;
-  row-gap: 2rem;
+  gap: 2.5rem;
+  /* row-gap: 2rem; */
 }
