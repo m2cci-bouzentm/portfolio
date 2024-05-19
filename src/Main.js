@@ -24,6 +24,7 @@ const Main = () => {
       <Career />
       <Skillset />
       <Projects />
+      <div className='h-[500px]'></div>
     </div>
   );
 };

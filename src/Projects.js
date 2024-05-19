@@ -1,5 +1,23 @@
 import React from 'react';
 import ProjectCard from './ProjectCard';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination, Autoplay } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/autoplay';
+import reactIcon from './assets/skillset/react-original.svg';
+import nodeIcon from './assets/skillset/nodejs-original-wordmark.svg';
+import expressIcon from './assets/skillset/express-original.svg';
+import tailwindcssIcon from './assets/skillset/tailwindcss-original.svg';
+import materialuiIcon from './assets/skillset/materialui-original.svg';
+import gitIcon from './assets/skillset/git-original-wordmark.svg';
+import firebaseIcon from './assets/skillset/firebase-original.svg';
+import tsIcon from './assets/skillset/typescript-original.svg';
+import axiosIcon from './assets/skillset/axios-plain-wordmark.svg';
+import reactRouter from './assets/skillset/reactrouter-original.svg';
+import swiperIcon from './assets/skillset/swiper-original.svg';
+import figmaIcon from './assets/skillset/figma-original.svg';
+import jsIcon from './assets/skillset/javascript-original.svg'
 
 const demonicEmperor = {
   cardTitle: '🚀 Explore Demonic Emperor Reader',
@@ -9,8 +27,17 @@ const demonicEmperor = {
   🚦 for navigation, Tailwinds for styling, plus it fetches all the necessary data from an API 🌐.`,
   projectUrl: 'https://demonic-emperor-front.vercel.app',
   projectTitle: 'Demonic Emperor',
+  tech: {
+    Js: jsIcon,
+    React: reactIcon,
+    'React Router': reactRouter,
+    'Tailwind CSS': tailwindcssIcon,
+    Node: nodeIcon,
+    Express: expressIcon,
+    Axios: axiosIcon,
+    Git: gitIcon,
+  },
 };
-
 const youtubeClone = {
   cardTitle: '🚀 Explore My Version Of Youtube !',
   cardDescription:
@@ -18,8 +45,16 @@ const youtubeClone = {
   cardNote: "Note: It's not mobile-friendly 📱.",
   projectUrl: 'https://mohamed-24-03-2022.github.io/youtube-clone/',
   projectTitle: 'Youtube Clone',
+  tech: {
+    Js: jsIcon,
+    React: reactIcon,
+    'React Router': reactRouter,
+    'Tailwind CSS': tailwindcssIcon,
+    'Material UI': materialuiIcon,
+    Axios: axiosIcon,
+    Git: gitIcon,
+  },
 };
-
 const photoTaggingApp = {
   cardTitle: "🚀 Where's Waldo? Photo Tagging App",
   cardDescription:
@@ -27,72 +62,115 @@ const photoTaggingApp = {
   cardNote: "Note: It's not mobile-friendly 📱.",
   projectUrl: 'https://mohamed-24-03-2022.github.io/photo-tagging-app/',
   projectTitle: 'Photo Tagging App',
+  tech: {
+    Js: jsIcon,
+    React: reactIcon,
+    'Tailwind CSS': tailwindcssIcon,
+    Firebase: firebaseIcon,
+    Git: gitIcon,
+  },
 };
-
 const shoppingCart = {
   cardTitle: '🚀 Shopping Cart',
   cardDescription:
     'Welcome to my React Shopping Cart app! 🎉 Browse, add to cart, and purchase with ease in this responsive single-page app. 🛍️ Features TypeScript for the first time, Tailwind for quick styling, and react-router-dom for seamless navigation. 🚀',
   projectUrl: 'https://mohamed-24-03-2022.github.io/react-ts-shopping-cart/',
   projectTitle: 'Shopping Cart',
+  tech: {
+    Js: jsIcon,
+    React: reactIcon,
+    TypeScript: tsIcon,
+    'Tailwind CSS': tailwindcssIcon,
+    'React Router': reactRouter,
+    Git: gitIcon,
+  },
 };
-
 const protfolio = {
   cardTitle: '🚀 My Portfolio',
   cardDescription:
-    "My portfolio, built with React.js and Tailwind CSS, features Next UI, SwiperJS, and Framer Motion 🚀. Prior to coding, I designed the UI in Figma for seamless frontend development. Although it's a single-page layout, it's dynamic and scalable, especially the projects section, ready to handle more data 💻.",
+    "My portfolio, built with React.js and Tailwind CSS, features Next UI and SwiperJS,  🚀. Prior to coding, I designed the UI in Figma for seamless frontend development. Although it's a single-page layout, it's dynamic and scalable, especially the projects section, ready to handle more data 💻.",
   projectUrl: 'http://localhost:3000/', //TODO: Update the URL
   projectTitle: 'Portfolio',
+  tech: {
+    Js: jsIcon,
+    React: reactIcon,
+    'Tailwind CSS': tailwindcssIcon,
+    SwiperJS: swiperIcon,
+    Git: gitIcon,
+    Figma: figmaIcon,
+  },
 };
 
 const Projects = () => {
   return (
     <div
       id="projects"
-      className="flex flex-col justify-center items-center text-justify max-w-[55%] mx-auto space-y-10 text-[1.5rem] font-extrabold relative z-10"
+      className="flex flex-col justify-center items-center text-justify max-w-[55%] max-h-[250vh] mx-auto space-y-10 text-[1.5rem] font-extrabold relative z-10"
     >
       <h1 className="self-start text-[4rem] text-clr-2">Projects</h1>
-
-      <ProjectCard
-        cardTitle={demonicEmperor.cardTitle}
-        cardDescription={demonicEmperor.cardDescription}
-        projectUrl={demonicEmperor.projectUrl}
-        projectTitle={demonicEmperor.projectTitle}
-      />
-
-      <ProjectCard
-        cardTitle={youtubeClone.cardTitle}
-        cardDescription={youtubeClone.cardDescription}
-        projectUrl={youtubeClone.projectUrl}
-        projectTitle={youtubeClone.projectTitle}
-        cardNote={youtubeClone.cardNote}
-        additionalClasses="bg-white"
-      />
-
-      {/* TODO fix youtube video pages */}
-
-      <ProjectCard
-        cardTitle={photoTaggingApp.cardTitle}
-        cardDescription={photoTaggingApp.cardDescription}
-        projectUrl={photoTaggingApp.projectUrl}
-        projectTitle={photoTaggingApp.projectTitle}
-        cardNote={photoTaggingApp.cardNote}
-        additionalClasses="bg-white"
-      />
-
-      <ProjectCard
-        cardTitle={shoppingCart.cardTitle}
-        cardDescription={shoppingCart.cardDescription}
-        projectUrl={shoppingCart.projectUrl}
-        projectTitle={shoppingCart.projectTitle}
-      />
-
-      <ProjectCard
-        cardTitle={protfolio.cardTitle}
-        cardDescription={protfolio.cardDescription}
-        projectUrl={protfolio.projectUrl}
-        projectTitle={protfolio.projectTitle}
-      />
+      <Swiper
+        className="w-full"
+        spaceBetween={50}
+        slidesPerView={1}
+        modules={[Pagination, Autoplay]}
+        pagination={{ clickable: true }}
+        autoplay={{
+          delay: 3500,
+          disableOnInteraction: false,
+        }}
+        loop={true}
+      >
+        <SwiperSlide>
+          <ProjectCard
+            cardTitle={demonicEmperor.cardTitle}
+            cardDescription={demonicEmperor.cardDescription}
+            projectUrl={demonicEmperor.projectUrl}
+            projectTitle={demonicEmperor.projectTitle}
+            tech={demonicEmperor.tech}
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <ProjectCard
+            cardTitle={protfolio.cardTitle}
+            cardDescription={protfolio.cardDescription}
+            projectUrl={protfolio.projectUrl}
+            projectTitle={protfolio.projectTitle}
+            tech={protfolio.tech}
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          {/* TODO fix youtube video pages */}
+          <ProjectCard
+            cardTitle={youtubeClone.cardTitle}
+            cardDescription={youtubeClone.cardDescription}
+            projectUrl={youtubeClone.projectUrl}
+            projectTitle={youtubeClone.projectTitle}
+            cardNote={youtubeClone.cardNote}
+            additionalClasses="bg-white"
+            tech={youtubeClone.tech}
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <ProjectCard
+            cardTitle={photoTaggingApp.cardTitle}
+            cardDescription={photoTaggingApp.cardDescription}
+            projectUrl={photoTaggingApp.projectUrl}
+            projectTitle={photoTaggingApp.projectTitle}
+            cardNote={photoTaggingApp.cardNote}
+            additionalClasses="bg-white"
+            tech={photoTaggingApp.tech}
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <ProjectCard
+            cardTitle={shoppingCart.cardTitle}
+            cardDescription={shoppingCart.cardDescription}
+            projectUrl={shoppingCart.projectUrl}
+            projectTitle={shoppingCart.projectTitle}
+            tech={shoppingCart.tech}
+          />
+        </SwiperSlide>
+      </Swiper>
     </div>
   );
 };

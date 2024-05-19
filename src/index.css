@@ -73,7 +73,40 @@ nav svg {
   width: 0;
   animation: typing 2.5s steps(20, end) forwards, blink 0.9s infinite;
 }
+@keyframes leftToRightAnimation {
+  from {
+    transform: translateX(-300%);
+    filter: blur(20px);
+  }
+  to {
+    transform: translateX(0);
+    filter: blur(0);
+  }
+}
+@keyframes rightToLeftAnimation {
+  from {
+    transform: translateX(300%);
+    filter: blur(20px);
+  }
+  to {
+    transform: translateX(0);
+    filter: blur(0);
+  }
+}
+.animate-text {
+  animation: leftToRightAnimation 1s ease-in-out;
+  transform: translateX(0);
+  transition: transform 300ms ease-in-out;
+}
+.animate-description {
+  animation: rightToLeftAnimation 1s ease-in-out;
+  transform: translateX(0);
+  transition: transform 300ms ease-in-out;
+}
 
+/**************************************** biography ****************************************/
+
+/******************************** CAREER **********************************/
 .career-card {
   background: linear-gradient(
     141deg,
@@ -92,6 +125,7 @@ nav svg {
   background-position: 20%;
 }
 
+/********************* SKILLS  ***********************************/
 #skills img {
   width: 60px;
   height: 60px;
@@ -100,5 +134,12 @@ nav svg {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   gap: 2.5rem;
-  /* row-gap: 2rem; */
+}
+
+/****************** Projects  ******************************/
+.swiper-pagination-bullet {
+  background-color: white !important;
+}
+.swiper-pagination-bullet-active {
+  background-color: var(--colors-clr-2) !important;
 }
