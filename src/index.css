@@ -21,7 +21,17 @@ html {
 body {
   font-family: 'Poppins', sans-serif;
 }
-
+@keyframes bounce {
+  from {
+    transform: translateY(-50%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+.down-arrow {
+  animation: bounce 0.8s infinite;
+}
 /****************************************** Nav *****************************************/
 
 .hiddenNav {

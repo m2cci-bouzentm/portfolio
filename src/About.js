@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import ShowText from './ShowText';
 
-const HeroSect = ({ showText }) => {
+const About = ({ showText }) => {
   const [textAnimation, setTextAnimation] = useState(false);
   const [descriptionAnimation, setDescriptionAnimation] = useState(false);
   const [showTextAnimation, setShowTextAnimation] = useState(false);
@@ -31,7 +31,7 @@ const HeroSect = ({ showText }) => {
   return (
     <div
       id="about"
-      className="hero-sect h-[150vh] py-20 px-52 space-y-20 font-extrabold relative z-10"
+      className="hero-sect py-20 px-52 space-y-20 font-extrabold relative z-10"
     >
       <div className="hero-text text-[5rem] my-8 relative">
         <span className="inline-block translate-x-[-300%] animate-text">Hello, I'm&nbsp;</span>
@@ -74,4 +74,4 @@ const HeroSect = ({ showText }) => {
   );
 };
 
-export default HeroSect;
+export default About;

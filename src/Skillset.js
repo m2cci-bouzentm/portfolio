@@ -1,6 +1,4 @@
 import React from 'react';
-// import { FaExternalLinkAlt } from 'react-icons/fa';
-// import { FaBootstrap } from "react-icons/fa";
 import htmlIcon from './assets/skillset/html5-original.svg';
 import cssIcon from './assets/skillset/css3-plain-wordmark.svg';
 import jsIcon from './assets/skillset/javascript-original.svg';
@@ -33,7 +31,7 @@ const Skillset = () => {
   return (
     <div
       id="skills"
-      className="flex flex-col justify-center items-center text-justify h-[100vh] max-w-[55%] mx-auto space-y-4 text-[1.5rem] font-extrabold relative z-10"
+      className="flex flex-col justify-center items-center text-justify max-w-[55%] mx-auto space-y-4 text-[1.5rem] font-extrabold relative z-10"
     >
       <h1 className="self-start text-[4rem] text-clr-2">Skillset</h1>
 

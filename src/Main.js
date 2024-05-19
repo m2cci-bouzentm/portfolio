@@ -1,9 +1,19 @@
 import React, { useEffect, useState } from 'react';
 import Biography from './Biography';
-import HeroSect from './HeroSect';
+import About from './About';
 import Career from './Career';
 import Skillset from './Skillset';
 import Projects from './Projects';
+import Contact from './Contact';
+import { FaAnglesDown } from 'react-icons/fa6';
+
+const DownArrow = ({ nextSection }) => (
+  <div className="flex justify-center items-center text-6xl pt-4 text-clr-2 ">
+    <a href={'#' + nextSection}>
+      <FaAnglesDown className="down-arrow" />
+    </a>
+  </div>
+);
 
 const Main = () => {
   const [showText, setShowText] = useState(0);
@@ -19,12 +29,17 @@ const Main = () => {
 
   return (
     <div className="text-white bg-clr-5">
-      <HeroSect showText={showText} />
+      <About showText={showText} />
+      <DownArrow nextSection="biography" />
       <Biography />
+      <DownArrow nextSection="career" />
       <Career />
+      <DownArrow nextSection="skills" />
       <Skillset />
+      <DownArrow nextSection="projects" />
       <Projects />
-      <div className='h-[500px]'></div>
+      <DownArrow nextSection="contact" />
+      <Contact />
     </div>
   );
 };

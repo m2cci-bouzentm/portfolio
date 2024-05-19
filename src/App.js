@@ -28,6 +28,7 @@ function App() {
       ></div>
       <Nav />
       <Main />
+      <footer className='mt-auto pt-8 w-full text-center text-[0.8rem] bg-clr-5 text-white text-opacity-60'>© 2024 Bouzentouta Mohamed.</footer>
     </div>
   );
 }

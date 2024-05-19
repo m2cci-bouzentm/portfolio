@@ -37,7 +37,6 @@ const ProjectCard = ({
       ></iframe>
       <div className="project-tech flex flex-wrap justify-center items-center space-x-4 relative bottom-36 saturate-200">
         {Object.keys(tech).map((techName, index) => {
-          console.log(techName);
           return (
             <img
               key={index}
