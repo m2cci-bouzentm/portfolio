@@ -89,7 +89,7 @@ const protfolio = {
   cardTitle: '🚀 My Portfolio',
   cardDescription:
     "My portfolio, built with React.js and Tailwind CSS, features Next UI and SwiperJS,  🚀. Prior to coding, I designed the UI in Figma for seamless frontend development. Although it's a single-page layout, it's dynamic and scalable, especially the projects section, ready to handle more data 💻.",
-  projectUrl: 'http://localhost:3000/', //TODO: Update the URL
+  projectUrl: 'https://protfolio-olive-omega.vercel.app/', //TODO: Update the URL
   projectTitle: 'Portfolio',
   tech: {
     Js: jsIcon,
@@ -105,7 +105,7 @@ const Projects = () => {
   return (
     <div
       id="projects"
-      className="flex flex-col justify-center items-center text-justify max-w-[55%] max-h-[250vh] mx-auto space-y-10 text-[1.5rem] font-extrabold relative z-10"
+      className="lg:max-w-[55%] md:text-[1.5rem] w-[80%] text-[1.25rem] flex flex-col justify-center items-center text-justify max-h-[250vh] mx-auto space-y-10 font-extrabold relative z-10"
     >
       <h1 className="self-start text-[4rem] text-clr-2">Projects</h1>
       <Swiper
@@ -138,9 +138,10 @@ const Projects = () => {
             tech={protfolio.tech}
           />
         </SwiperSlide>
-        <SwiperSlide>
-          {/* TODO fix youtube video pages */}
-          <ProjectCard
+        {/* <SwiperSlide> */}
+        {/* TODO fix youtube video pages */}
+        {/* TODO change iframe with screenshots */}
+        {/* <ProjectCard
             cardTitle={youtubeClone.cardTitle}
             cardDescription={youtubeClone.cardDescription}
             projectUrl={youtubeClone.projectUrl}
@@ -148,8 +149,8 @@ const Projects = () => {
             cardNote={youtubeClone.cardNote}
             additionalClasses="bg-white"
             tech={youtubeClone.tech}
-          />
-        </SwiperSlide>
+          /> */}
+        {/* </SwiperSlide> */}
         <SwiperSlide>
           <ProjectCard
             cardTitle={photoTaggingApp.cardTitle}

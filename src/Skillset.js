@@ -31,11 +31,11 @@ const Skillset = () => {
   return (
     <div
       id="skills"
-      className="flex flex-col justify-center items-center text-justify max-w-[55%] mx-auto space-y-4 text-[1.5rem] font-extrabold relative z-10"
+      className="lg:max-w-[55%] md:text-[1.5rem] w-[80%] text-[1.25rem] flex flex-col justify-center items-center text-justify mx-auto space-y-4 font-extrabold relative z-10"
     >
       <h1 className="self-start text-[4rem] text-clr-2">Skillset</h1>
 
-      <div className="grid py-10 saturate-200">
+      <div className="grid xl:grid-cols-8 md:gap-[2.5rem] grid-cols-6 gap-[2rem] py-10 saturate-200">
         <img src={htmlIcon} alt="html-icon" title="HTML" />
         <img src={cssIcon} alt="css-icon" title='CSS' />
         <img src={jsIcon} alt="js-icon" title='javascript' />

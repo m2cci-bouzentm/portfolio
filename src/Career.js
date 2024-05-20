@@ -6,7 +6,7 @@ import unicaenLogo from './assets/unicaen.svg';
 
 const Career = () => {
   return (
-    <div id="career" className="flex flex-col justify-center items-center text-justify max-w-[55%] mx-auto space-y-10 text-[1.5rem] font-extrabold relative z-10">
+    <div id="career" className="lg:max-w-[55%] md:text-[1.5rem] w-[80%] text-[1.25rem] flex flex-col justify-center items-center text-justify mx-auto space-y-10 font-extrabold relative z-10">
       <h1 className="self-start text-[4rem] text-clr-2">Career</h1>
 
       <EsgiCard esgiLogo={esgiLogo} />

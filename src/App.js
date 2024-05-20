@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 
 function App() {
   const [mouseCoor, setMouseCoor] = useState({ x: -100, y: -100 });
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const hoverHandler = (e) => {
     const { pageX, pageY } = e;
@@ -26,8 +27,10 @@ function App() {
         className="hovering-effect-div absolute z-10"
         style={{ top: `${mouseCoor.y}px`, left: `${mouseCoor.x}px` }}
       ></div>
-      <Nav />
-      <Main />
+      <Nav isMobileMenuOpen={isMobileMenuOpen} setIsMobileMenuOpen={setIsMobileMenuOpen} />
+      <div className={isMobileMenuOpen ? "blur-sm -mx-[5px] pointer-events-none" : "blured-main-animation"}>
+        <Main />
+      </div>
       <footer className='mt-auto pt-8 w-full text-center text-[0.8rem] bg-clr-5 text-white text-opacity-60'>© 2024 Bouzentouta Mohamed.</footer>
     </div>
   );

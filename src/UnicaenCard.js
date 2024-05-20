@@ -4,7 +4,7 @@ import { FaExternalLinkAlt } from 'react-icons/fa';
 const UnicaenCard = ({ unicaenLogo }) => {
   return (
     <div
-      className="career-card text-justify h-[350px] flex flex-col relative overflow-hidden outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-offset-2 shadow-md rounded-lg motion-reduce:transition-none font-[600] sm:font-[700] text-[1rem] sm:text-[1.25rem] lg:text-[1.5rem]"
+      className="career-card font-[600] sm:font-[700] text-[1rem] sm:text-[1.25rem] lg:text-[1.5rem] text-justify h-[350px] flex flex-col relative overflow-hidden outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-offset-2 shadow-md rounded-lg motion-reduce:transition-none"
       tabIndex="-1"
     >
       <div className="p-3 z-10 w-full justify-start items-center shrink-0 overflow-inherit color-inherit subpixel-antialiased rounded-t-lg flex gap-3">

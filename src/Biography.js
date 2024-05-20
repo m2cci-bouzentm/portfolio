@@ -1,7 +1,7 @@
 import React, { useRef, useEffect, useState } from 'react';
 
 const Biography = () => {
-  const [isVisible, setIsVisible] = useState(false)
+  const [isVisible, setIsVisible] = useState(false);
   const myRef = useRef();
 
   useEffect(() => {
@@ -15,7 +15,7 @@ const Biography = () => {
 
   useEffect(() => {
     if (isVisible) {
-      console.log(myRef.current);
+      // console.log(myRef.current);
       [...myRef.current.children].forEach((p, index) => {
         setTimeout(p.classList.add('animate-text'), index * 100);
       });
@@ -26,7 +26,7 @@ const Biography = () => {
     <div
       ref={myRef}
       id="biography"
-      className="flex flex-col justify-center items-center text-justify max-w-[55%] mx-auto space-y-10 text-[1.5rem] font-extrabold relative z-10"
+      className="lg:max-w-[55%] md:text-[1.5rem] w-[80%] text-[1.25rem] flex flex-col justify-center items-center text-justify mx-auto space-y-10 font-extrabold relative z-10"
     >
       <h1 className="self-start text-[4rem] text-clr-2">Biography</h1>
       <p className="translate-x-[-300%]">
@@ -46,6 +46,7 @@ const Biography = () => {
         📄Feel free to grab a pdf version of my CV for more ! (Contact Section)
         <a href="#contact">👇</a>
       </p>
+      <div className="spacer py-2"></div>
     </div>
   );
 };

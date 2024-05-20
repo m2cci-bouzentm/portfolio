@@ -20,10 +20,12 @@ const ProjectCard = ({
         rel="noreferrer"
       >
         <FaGithub className="text-clr-2" />
-        <span className="underline">{cardTitle}</span>
-        <FaExternalLinkAlt className="text-[80%]" />
+        <span className="underline">
+          {cardTitle}
+          <FaExternalLinkAlt className="inline-block no-underline mx-2 text-[80%]" />
+        </span>
       </a>
-      <div className="min-h-[200px]">
+      <div className="">
         <p>{cardDescription}</p>
         {cardNote && <p className="!m-2 text-[1.2rem]">{cardNote}</p>}
       </div>

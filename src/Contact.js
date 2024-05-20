@@ -9,7 +9,7 @@ const Contact = () => {
   return (
     <div
       id="contact"
-      className="flex flex-col justify-center items-center text-justify h-[100vh] w-[55%] max-w-[55%] mx-auto space-y-10 text-[1.5rem] relative z-10"
+      className="lg:max-w-[55%] md:text-[1.5rem] w-[80%] text-[1.25rem] flex flex-col justify-center items-center text-justify h-[100vh] mx-auto space-y-10 relative z-10"
     >
       <h1 className="self-start text-[4rem] font-extrabold text-clr-2 mx-auto">
         Contact
@@ -21,7 +21,7 @@ const Contact = () => {
         download
         target="_blank"
         href={myCV}
-        className="flex justify-center items-center border-4 rounded-lg border-clr-2 py-4 px-2 font-bold text-[1.2rem]"
+        className="flex justify-center items-center border-4 rounded-lg border-clr-2 py-4 px-2 font-bold text-[1rem] md:text-[1.2rem]"
         rel="noreferrer"
       >
         Download CV - FR{' '}
