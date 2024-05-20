@@ -24,7 +24,7 @@ function App() {
   return (
     <div onMouseMove={hoverHandler}>
       <div
-        className="hovering-effect-div absolute z-10"
+        className="hovering-effect-div absolute z-10 duration-0"
         style={{ top: `${mouseCoor.y}px`, left: `${mouseCoor.x}px` }}
       ></div>
       <Nav isMobileMenuOpen={isMobileMenuOpen} setIsMobileMenuOpen={setIsMobileMenuOpen} />

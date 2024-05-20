@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { FaGithub, FaLaptopCode } from 'react-icons/fa';
 
 const MenuItems = ({ classes, setIsMobileMenuOpen }) => {
