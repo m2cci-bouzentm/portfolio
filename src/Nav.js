@@ -75,7 +75,7 @@ const Nav = ({ isMobileMenuOpen, setIsMobileMenuOpen }) => {
     <nav
       className={
         'md:px-[10%] sm:px-[5%] px-0 py-4 flex flex-wrap items-center justify-between font-[600] opacity-95 w-full fixed z-30 text-white bg-clr-1 transition-transform duration-300 ' +
-        (isNav ? '' : 'hiddenNav') +
+        (isNav ? '' : 'hidden-nav') +
         (isMobileMenuOpen ? '!items-start' : '')
       }
     >
@@ -112,7 +112,7 @@ const Nav = ({ isMobileMenuOpen, setIsMobileMenuOpen }) => {
       <div
         className={
           'mobile-menu-items bg-clr-1 bg- bg-opacity-80 absolute h-[100vh] w-full top-[60px] overflow-hidden ' +
-          (isMobileMenuOpen ? 'show-mobile-menu' : 'hide-mobile-menu')
+          (isMobileMenuOpen ? 'show-mobile-menu !visible' : 'hide-mobile-menu')
         }
       >
         <MenuItems

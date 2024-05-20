@@ -34,7 +34,7 @@ body {
   animation: bounce 0.8s infinite;
 }
 /****************************************** Nav *****************************************/
-.hiddenNav {
+.hidden-nav {
   transform: translateY(-100%);
 }
 nav .menu-items li {
@@ -75,6 +75,9 @@ nav svg {
     height: 0;
   }
 }
+.mobile-menu-items {
+  visibility: hidden;
+}
 .show-mobile-menu {
   animation: upToBottomAnimation 0.5s ease-in-out;
   transition: transform 300ms ease-in-out;
@@ -84,6 +87,7 @@ nav svg {
   animation: BottomToTopAnimation 0.5s ease-in-out;
   height: 0;
 }
+
 /****************************************** Main *****************************************/
 
 .hovering-effect-div {
