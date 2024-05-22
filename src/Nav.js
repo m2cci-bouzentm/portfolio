@@ -112,11 +112,14 @@ const Nav = ({ isMobileMenuOpen, setIsMobileMenuOpen }) => {
       <div
         className={
           'mobile-menu-items bg-clr-1 bg- bg-opacity-80 absolute h-[100vh] w-full top-[60px] overflow-hidden ' +
-          (isMobileMenuOpen ? 'show-mobile-menu !visible' : 'hide-mobile-menu')
+          (isMobileMenuOpen ? 'show-mobile-menu' : 'hide-mobile-menu')
         }
       >
         <MenuItems
-          classes={'text-[1.125rem] p-6 space-y-2 text-clr-2 relative z-10'}
+          classes={
+            'text-[1.125rem] p-6 space-y-2 text-clr-2 relative z-10' +
+            (isMobileMenuOpen ? 'show-mobile-menu' : 'hide-mobile-menu')
+          }
           setIsMobileMenuOpen={setIsMobileMenuOpen}
         />
       </div>

@@ -81,7 +81,7 @@ nav svg {
 .show-mobile-menu {
   animation: upToBottomAnimation 0.5s ease-in-out;
   transition: transform 300ms ease-in-out;
-  /* display: absolute; */
+  visibility: visible !important;
 }
 .hide-mobile-menu {
   animation: BottomToTopAnimation 0.5s ease-in-out;
