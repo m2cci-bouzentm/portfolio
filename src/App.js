@@ -28,7 +28,7 @@ function App() {
         style={{ top: `${mouseCoor.y}px`, left: `${mouseCoor.x}px` }}
       ></div>
       <Nav isMobileMenuOpen={isMobileMenuOpen} setIsMobileMenuOpen={setIsMobileMenuOpen} />
-      <div className={isMobileMenuOpen ? "blur-sm -mx-[5px] pointer-events-none" : "blured-main-animation"}>
+      <div className={isMobileMenuOpen ? "blur-sm -mx-[5px] pointer-events-none" : ""}>
         <Main />
       </div>
       <footer className='mt-auto pt-8 w-full text-center text-[0.8rem] bg-clr-5 text-white text-opacity-60'>© 2024 Bouzentouta Mohamed.</footer>

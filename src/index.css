@@ -155,17 +155,6 @@ nav svg {
   transform: translateX(0);
   transition: transform 300ms ease-in-out;
 }
-@keyframes fadeBlurOut {
-  from {
-    filter: blur(4px);
-  }
-  to {
-    filter: blur(0);
-  }
-}
-.blured-main-animation {
-  animation: fadeBlurOut 1s ease-in-out;
-}
 /**************************************** biography ****************************************/
 
 /******************************** CAREER **********************************/
