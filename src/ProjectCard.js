@@ -16,7 +16,7 @@ const ProjectCard = ({
       <a
         href={projectUrl}
         target="_blank"
-        className="flex text-[2rem] self-start items-center space-x-2"
+        className="flex text-[1rem] sm:text-[2rem] self-start items-center space-x-2"
         rel="noreferrer"
       >
         <FaGithub className="text-clr-2" />
@@ -25,19 +25,19 @@ const ProjectCard = ({
           <FaExternalLinkAlt className="inline-block no-underline mx-2 text-[80%]" />
         </span>
       </a>
-      <div className="">
+      <div className="project-description text-[1rem] sm:text-[1.25rem]">
         <p>{cardDescription}</p>
         {cardNote && <p className="!m-2 text-[1.2rem]">{cardNote}</p>}
       </div>
       <iframe
         className={
-          'scale-50 !-mt-28 w-[160%] h-[100vh] relative z-10 self-center border-4 border-clr-2 rounded-lg shadow-lg ' +
+          'scale-50 !-mt-20 w-[160%] h-[80vh] sm:h-[100vh] relative z-10 self-center border-4 border-clr-2 rounded-lg shadow-lg ' +
           additionalClasses || ''
         }
         src={projectUrl}
         title={projectTitle}
       ></iframe>
-      <div className="project-tech flex flex-wrap justify-center items-center space-x-4 relative bottom-36 saturate-200">
+      <div className="project-tech flex flex-wrap justify-center items-center !mb-6 space-x-4 saturate-200">
         {Object.keys(tech).map((techName, index) => {
           return (
             <img

@@ -31,9 +31,9 @@ const About = ({ showText }) => {
   return (
     <div
       id="about"
-      className="xl:px-48 lg:px-[7%] sm:px-[8%] px-[10%] hero-sect py-20 space-y-20 font-extrabold relative z-10"
+      className="hero-sect xl:px-48 lg:px-[7%] sm:px-[8%] px-[5%] py-20 space-y-20 font-extrabold relative z-10"
     >
-      <div className="hero-text my-8 relative text-[3rem] lg:text-[5rem]">
+      <div className="hero-text my-8 relative pt-8 sm:pt-0 text-[2.5rem] sm:text-[3rem] lg:text-[5rem]">
         <span className="inline-block translate-x-[-300%] animate-text">Hello, I'm&nbsp;</span>
         <span
           className={
@@ -46,13 +46,13 @@ const About = ({ showText }) => {
       </div>
       <div
         className={
-          'hero-desc translate-x-[300%] ' +
+          'hero-desc translate-x-[300%]' +
           (descriptionAnimation ? 'animate-description' : '')
         }
       >
         <div className="my-6">A developer who </div>
-        <div className="md:text-[3rem] text-[2.5rem]">Bridges the gap between</div>
-        <div className="md:text-[3rem] text-[2.5rem]">
+        <div className="md:text-[3rem] text-[1.5rem] sm:text-[2.5rem]">Bridges the gap between</div>
+        <div className="md:text-[3rem] text-[1.5rem] sm:text-[2.5rem]">
           code & <span className="text-clr-2">creativity</span> ...
         </div>
         <div className="my-6">
@@ -61,7 +61,7 @@ const About = ({ showText }) => {
       </div>
       <div
         className={
-          'md:text-[2rem] text-[1.5rem] text-clr-2 space-x-2 flex translate-x-[-300%] ' +
+          'text-[1.25rem] md:text-[2rem] sm:text-[1.5rem] text-clr-2 space-x-2 flex translate-x-[-300%] ' +
           (showTextAnimation ? 'animate-text' : '')
         }
       >

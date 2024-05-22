@@ -9,9 +9,9 @@ const Contact = () => {
   return (
     <div
       id="contact"
-      className="lg:max-w-[55%] md:text-[1.5rem] w-[80%] text-[1.25rem] flex flex-col justify-center items-center text-justify h-[100vh] mx-auto space-y-10 relative z-10"
+      className="w-[90%] sm:w-[80%] lg:max-w-[55%] text-[1rem] md:text-[1.5rem] sm:text-[1.25rem] h-[90vh] space-y-6 sm:space-y-10 flex flex-col justify-start items-center text-justify mx-auto sm:font-bold relative z-10"
     >
-      <h1 className="self-start text-[4rem] font-extrabold text-clr-2 mx-auto">
+      <h1 className="text-[2.5rem] md:text-[4rem] text-clr-2 !font-extrabold">
         Contact
       </h1>
 

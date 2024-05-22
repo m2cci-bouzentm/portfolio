@@ -26,9 +26,11 @@ const Biography = () => {
     <div
       ref={myRef}
       id="biography"
-      className="lg:max-w-[55%] md:text-[1.5rem] w-[80%] text-[1.25rem] flex flex-col justify-center items-center text-justify mx-auto space-y-10 font-extrabold relative z-10"
+      className="w-[90%] sm:w-[80%] lg:max-w-[55%] text-[1rem] md:text-[1.5rem] sm:text-[1.25rem] space-y-6 sm:space-y-10 flex flex-col justify-center items-center text-justify mx-auto font-bold relative z-10"
     >
-      <h1 className="self-start text-[4rem] text-clr-2">Biography</h1>
+      <h1 className="self-start text-[2.5rem] md:text-[4rem] text-clr-2 !font-extrabold">
+        Biography
+      </h1>
       <p className="translate-x-[-300%]">
         I'm a 22 years old full-stack developer & a software engineer hooked on
         mastering the latest in web tech and currently interested in Web

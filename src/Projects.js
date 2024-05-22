@@ -17,7 +17,7 @@ import axiosIcon from './assets/skillset/axios-plain-wordmark.svg';
 import reactRouter from './assets/skillset/reactrouter-original.svg';
 import swiperIcon from './assets/skillset/swiper-original.svg';
 import figmaIcon from './assets/skillset/figma-original.svg';
-import jsIcon from './assets/skillset/javascript-original.svg'
+import jsIcon from './assets/skillset/javascript-original.svg';
 
 const demonicEmperor = {
   cardTitle: '🚀 Explore Demonic Emperor Reader',
@@ -105,9 +105,11 @@ const Projects = () => {
   return (
     <div
       id="projects"
-      className="lg:max-w-[55%] md:text-[1.5rem] w-[80%] text-[1.25rem] flex flex-col justify-center items-center text-justify max-h-[250vh] mx-auto space-y-10 font-extrabold relative z-10"
+      className="w-[90%] sm:w-[80%] lg:max-w-[55%] text-[1rem] md:text-[1.5rem] sm:text-[1.25rem] space-y-6 sm:space-y-10 flex flex-col justify-center items-center text-justify mx-auto font-bold relative z-10"
     >
-      <h1 className="self-start text-[4rem] text-clr-2">Projects</h1>
+      <h1 className="self-start text-[2.5rem] md:text-[4rem] text-clr-2 !font-extrabold">
+        Projects
+      </h1>
       <Swiper
         className="w-full"
         spaceBetween={50}

@@ -8,7 +8,7 @@ import Contact from './Contact';
 import { FaAnglesDown } from 'react-icons/fa6';
 
 const DownArrow = ({ nextSection }) => (
-  <div className="flex justify-center items-center text-6xl pt-4 text-clr-2 ">
+  <div className="flex justify-center items-center text-4xl sm:text-6xl pt-4 text-clr-2 ">
     <a href={'#' + nextSection}>
       <FaAnglesDown className="down-arrow" />
     </a>
