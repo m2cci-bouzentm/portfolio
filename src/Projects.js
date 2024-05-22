@@ -89,7 +89,7 @@ const protfolio = {
   cardTitle: '🚀 My Portfolio',
   cardDescription:
     "My portfolio, built with React.js and Tailwind CSS, features Next UI and SwiperJS,  🚀. Prior to coding, I designed the UI in Figma for seamless frontend development. Although it's a single-page layout, it's dynamic and scalable, especially the projects section, ready to handle more data 💻.",
-  projectUrl: 'https://protfolio-omega-six.vercel.app/', //TODO: Update the URL
+  projectUrl: 'https://www.bouzentoutamohamed.online/',
   projectTitle: 'Portfolio',
   tech: {
     Js: jsIcon,

@@ -14,12 +14,20 @@ const Biography = () => {
   }, []);
 
   useEffect(() => {
+    let timeout;
+
     if (isVisible) {
-      // console.log(myRef.current);
       [...myRef.current.children].forEach((p, index) => {
-        setTimeout(p.classList.add('animate-text'), index * 100);
+        timeout = setTimeout(() => {
+          p.classList.add('animate-text');
+        }, (index + 1) * 200);
       });
     }
+
+    return () => {
+      clearTimeout(timeout);
+    }
+
   }, [isVisible]);
 
   return (
@@ -37,7 +45,7 @@ const Biography = () => {
         Development. 💡☁️
       </p>
       <p className="translate-x-[-300%]">
-        Kickstarted coding at a tender age of 18 with C, now I craft
+        Kickstarted coding at a tender age of 16 with C, now I craft
         cutting-edge web projects, using the most trending web technologies.🚀
       </p>
       <p className="translate-x-[-300%]">

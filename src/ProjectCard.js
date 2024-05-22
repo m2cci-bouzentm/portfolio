@@ -13,10 +13,9 @@ const ProjectCard = ({
 }) => {
   return (
     <div className="project-card font-bold flex flex-col justify-center items-center space-y-8 cursor-grab">
-      <a
+      <a className="project-title flex text-[1rem] sm:text-[2rem] self-start items-center space-x-2"
         href={projectUrl}
         target="_blank"
-        className="flex text-[1rem] sm:text-[2rem] self-start items-center space-x-2"
         rel="noreferrer"
       >
         <FaGithub className="text-clr-2" />
