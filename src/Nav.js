@@ -28,7 +28,7 @@ const MenuItems = ({ classes, setIsMobileMenuOpen }) => {
     </ul>
   );
 };
-const HamburgerMenu = ({ openMobileMenu, isMobileMenuOpen }) => (
+const HamburgerMenuButton = ({ openMobileMenu, isMobileMenuOpen }) => (
   <div
     onClick={openMobileMenu}
     className="mobile-menu-button flex flex-col gap-[1rem] cursor-pointer"
@@ -82,7 +82,7 @@ const Nav = ({ isMobileMenuOpen, setIsMobileMenuOpen }) => {
       <div className="flex items-center space-x-4 mx-2 sm:mx-0">
         {/********************  mobile-menu *********************/}
         <div className="mobile-menu block sm:hidden h-full ">
-          <HamburgerMenu
+          <HamburgerMenuButton
             openMobileMenu={openMobileMenu}
             isMobileMenuOpen={isMobileMenuOpen}
           />
