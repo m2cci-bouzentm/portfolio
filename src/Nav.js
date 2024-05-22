@@ -117,7 +117,7 @@ const Nav = ({ isMobileMenuOpen, setIsMobileMenuOpen }) => {
       >
         <MenuItems
           classes={
-            'text-[1.125rem] p-6 space-y-2 text-clr-2 relative z-10' +
+            'text-[1.125rem] p-6 space-y-2 text-clr-2 relative z-10 ' +
             (isMobileMenuOpen ? 'show-mobile-menu' : 'hide-mobile-menu')
           }
           setIsMobileMenuOpen={setIsMobileMenuOpen}
