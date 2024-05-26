@@ -15,7 +15,7 @@ const About = ({ showText }) => {
     }, 1000);
     const timeout3 = setTimeout(() => {
       setShowTextAnimation(true);
-    }, 1400);
+    }, 1300);
 
     return () => {
       setTextAnimation(false);
