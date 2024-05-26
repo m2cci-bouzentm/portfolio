@@ -12,7 +12,7 @@ const About = ({ showText }) => {
     }, 500);
     const timeout2 = setTimeout(() => {
       setDescriptionAnimation(true);
-    }, 1000);
+    }, 1100);
     const timeout3 = setTimeout(() => {
       setShowTextAnimation(true);
     }, 1300);
