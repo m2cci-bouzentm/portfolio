@@ -9,13 +9,13 @@ const About = ({ showText }) => {
   useEffect(() => {
     const timeout1 = setTimeout(() => {
       setTextAnimation(true);
-    }, 400);
+    }, 500);
     const timeout2 = setTimeout(() => {
       setDescriptionAnimation(true);
-    }, 600);
+    }, 1000);
     const timeout3 = setTimeout(() => {
       setShowTextAnimation(true);
-    }, 800);
+    }, 1400);
 
     return () => {
       setTextAnimation(false);

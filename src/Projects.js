@@ -141,11 +141,13 @@ const Projects = () => {
           />
         </SwiperSlide>
         {/* <SwiperSlide> */}
-        {/* //TODO fix iphone animation due to setTimeout  */}
+
         {/* TODO fix youtube video pages */}
         {/* TODO change iframe with screenshots */}
         {/* TODO Add python projject j*/}
         {/* TODO Add node scrapper j*/}
+
+
         {/* <ProjectCard
             cardTitle={youtubeClone.cardTitle}
             cardDescription={youtubeClone.cardDescription}
