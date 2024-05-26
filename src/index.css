@@ -22,6 +22,7 @@ body,
 html {
   transition: none;
 }
+
 html {
   scroll-behavior: smooth;
 }
@@ -128,24 +129,30 @@ nav svg {
   animation: typing 2.5s steps(20, end) forwards, blink 0.9s infinite;
 }
 @keyframes leftToRightAnimation {
-  from {
+  0% {
     transform: translateX(-300%);
     filter: blur(20px);
     opacity: 0;
   }
-  to {
+  70% {
+    opacity: 0.45;
+  }
+  100% {
     transform: translateX(0);
     filter: blur(0);
     opacity: 1;
   }
 }
 @keyframes rightToLeftAnimation {
-  from {
+  0% {
     transform: translateX(300%);
     filter: blur(20px);
     opacity: 0;
   }
-  to {
+  70% {
+    opacity: 0.45;
+  }
+  100% {
     transform: translateX(0);
     filter: blur(0);
     opacity: 1;
@@ -159,6 +166,7 @@ nav svg {
 .animate-description {
   animation: rightToLeftAnimation 1s ease-in-out;
   transform: translateX(0);
+  opacity: 1;
   transition: none;
 }
 /**************************************** biography ****************************************/

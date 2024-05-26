@@ -12,10 +12,10 @@ const About = ({ showText }) => {
     }, 500);
     const timeout2 = setTimeout(() => {
       setDescriptionAnimation(true);
-    }, 1100);
+    }, 1300);
     const timeout3 = setTimeout(() => {
       setShowTextAnimation(true);
-    }, 1300);
+    }, 1500);
 
     return () => {
       setTextAnimation(false);
@@ -37,7 +37,7 @@ const About = ({ showText }) => {
         <span className="inline-block translate-x-[-300%] animate-text">Hello, I'm&nbsp;</span>
         <span
           className={
-            'translate-x-[-300%] inline-block ' +
+            'inline-block translate-x-[-300%] ' +
             (textAnimation ? 'animate-text' : '')
           }
         >
@@ -46,8 +46,8 @@ const About = ({ showText }) => {
       </div>
       <div
         className={
-          'hero-desc translate-x-[300%]' +
-          (descriptionAnimation ? 'animate-description' : '')
+          'hero-desc translate-x-[300%] ' +
+          (descriptionAnimation ? 'animate-description' : 'opacity-0 blur-lg')
         }
       >
         <div className="my-6">A developer who </div>
@@ -62,7 +62,7 @@ const About = ({ showText }) => {
       <div
         className={
           'text-[1.25rem] md:text-[2rem] sm:text-[1.5rem] text-clr-2 space-x-2 flex translate-x-[-300%] ' +
-          (showTextAnimation ? 'animate-text' : '')
+          (showTextAnimation ? 'animate-text' : 'opacity-0 blur-lg')
         }
       >
         <div className="text-white min-w-max">I'm a </div>
