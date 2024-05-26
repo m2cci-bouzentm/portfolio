@@ -9,6 +9,7 @@ const About = ({ showText }) => {
 
   return (
     <div
+      onLoad={() => setIsLoaded(true)}
       id="about"
       className="hero-sect xl:px-48 lg:px-[7%] sm:px-[8%] px-[5%] py-20 space-y-20 font-extrabold relative z-10"
     >
