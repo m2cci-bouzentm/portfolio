@@ -17,7 +17,9 @@
   transition: all 0.5s ease-in-out;
 }
 ul,
-li {
+li,
+body,
+html {
   transition: none;
 }
 html {
@@ -129,37 +131,35 @@ nav svg {
   from {
     transform: translateX(-300%);
     filter: blur(20px);
+    opacity: 0;
   }
   to {
     transform: translateX(0);
     filter: blur(0);
+    opacity: 1;
   }
 }
 @keyframes rightToLeftAnimation {
   from {
     transform: translateX(300%);
     filter: blur(20px);
+    opacity: 0;
   }
   to {
     transform: translateX(0);
     filter: blur(0);
+    opacity: 1;
   }
 }
-
-.animate-text-delayed-1 {
-  animation: leftToRightAnimation 1s ease-in-out 0.5s;
+.animate-text {
+  animation: leftToRightAnimation 1s ease-in-out;
   transform: translateX(0);
-  transition: transform 300ms ease-in-out;
+  transition: none;
 }
-.animate-text-delayed-2 {
-  animation: leftToRightAnimation 1s ease-in-out 1s;
+.animate-description {
+  animation: rightToLeftAnimation 1s ease-in-out;
   transform: translateX(0);
-  transition: transform 300ms ease-in-out;
-}
-.animate-description-delayed-1 {
-  animation: rightToLeftAnimation 1s ease-in-out 0.5s;
-  transform: translateX(0);
-  transition: transform 300ms ease-in-out;
+  transition: none;
 }
 /**************************************** biography ****************************************/
 

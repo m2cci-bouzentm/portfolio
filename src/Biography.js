@@ -17,10 +17,10 @@ const Biography = () => {
     let timeout;
 
     if (isVisible) {
-      [...myRef.current.children].forEach((p, index) => {
+      [...myRef.current.children].forEach((childElement, index) => {
         timeout = setTimeout(() => {
-          p.classList.add('animate-text');
-        }, (index + 1) * 200);
+          childElement.classList.add('animate-text');
+        }, (index + 1) * 150);
       });
     }
 
@@ -36,7 +36,7 @@ const Biography = () => {
       id="biography"
       className="w-[90%] sm:w-[80%] lg:max-w-[55%] text-[1rem] md:text-[1.5rem] sm:text-[1.25rem] space-y-6 sm:space-y-10 flex flex-col justify-center items-center text-justify mx-auto font-bold relative z-10"
     >
-      <h1 className="self-start text-[2.5rem] md:text-[4rem] text-clr-2 !font-extrabold">
+      <h1 className="self-start text-[2.5rem] md:text-[4rem] text-clr-2 translate-x-[-300%] !font-extrabold">
         Biography
       </h1>
       <p className="translate-x-[-300%]">

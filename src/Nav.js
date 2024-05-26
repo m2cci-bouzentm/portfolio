@@ -96,7 +96,7 @@ const Nav = ({ isMobileMenuOpen, setIsMobileMenuOpen }) => {
       </div>
 
       <div className="menu-items hidden sm:block">
-        <MenuItems classes={'flex justify-around space-x-6'} />
+        <MenuItems classes={'flex justify-around space-x-6'} setIsMobileMenuOpen={setIsMobileMenuOpen} />
       </div>
 
       <div className="github-logo mx-2 sm:mx-0">
