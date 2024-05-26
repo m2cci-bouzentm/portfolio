@@ -145,13 +145,19 @@ nav svg {
     filter: blur(0);
   }
 }
-.animate-text {
-  animation: leftToRightAnimation 1s ease-in-out;
+
+.animate-text-delayed-1 {
+  animation: leftToRightAnimation 1s ease-in-out 0.5s;
   transform: translateX(0);
   transition: transform 300ms ease-in-out;
 }
-.animate-description {
-  animation: rightToLeftAnimation 1s ease-in-out;
+.animate-text-delayed-2 {
+  animation: leftToRightAnimation 1s ease-in-out 1s;
+  transform: translateX(0);
+  transition: transform 300ms ease-in-out;
+}
+.animate-description-delayed-1 {
+  animation: rightToLeftAnimation 1s ease-in-out 0.5s;
   transform: translateX(0);
   transition: transform 300ms ease-in-out;
 }

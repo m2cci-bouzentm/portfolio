@@ -2,30 +2,9 @@ import React, { useEffect, useState } from 'react';
 import ShowText from './ShowText';
 
 const About = ({ showText }) => {
-  const [textAnimation, setTextAnimation] = useState(false);
-  const [descriptionAnimation, setDescriptionAnimation] = useState(false);
-  const [showTextAnimation, setShowTextAnimation] = useState(false);
-
+  const [isLoaded, setIsLoaded] = useState(false);
   useEffect(() => {
-    const timeout1 = setTimeout(() => {
-      setTextAnimation(true);
-    }, 300);
-    const timeout2 = setTimeout(() => {
-      setDescriptionAnimation(true);
-    }, 600);
-    const timeout3 = setTimeout(() => {
-      setShowTextAnimation(true);
-    }, 900);
-
-    return () => {
-      setTextAnimation(false);
-      setDescriptionAnimation(false);
-      setShowTextAnimation(false);
-
-      clearTimeout(timeout1);
-      clearTimeout(timeout2);
-      clearTimeout(timeout3);
-    };
+    setIsLoaded(true);
   }, []);
 
   return (
@@ -34,24 +13,47 @@ const About = ({ showText }) => {
       className="hero-sect xl:px-48 lg:px-[7%] sm:px-[8%] px-[5%] py-20 space-y-20 font-extrabold relative z-10"
     >
       <div className="hero-text my-8 relative pt-8 sm:pt-0 text-[2.5rem] sm:text-[3rem] lg:text-[5rem]">
-        <span className="inline-block translate-x-[-300%] animate-text">Hello, I'm&nbsp;</span>
         <span
-          className={
-            'translate-x-[-300%] inline-block ' +
-            (textAnimation ? 'animate-text' : '')
+          style={
+            isLoaded
+              ? { animation: 'leftToRightAnimation 1s ease-in-out' }
+              : { transform: 'translate(-300%)' }
           }
+          className="inline-block"
+        >
+          Hello, I'm&nbsp;
+        </span>
+        <span
+          style={
+            isLoaded
+              ? {
+                animation: 'leftToRightAnimation 1s ease-in-out 0.4s',
+                transform: 'translate(0)',
+                transitionDelay: '0.4s',
+              }
+              : { transform: 'translate(-300%)' }
+          }
+          className="inline-block "
         >
           <span className="text-clr-2"> MOHAMED</span> !
         </span>
       </div>
       <div
-        className={
-          'hero-desc translate-x-[300%]' +
-          (descriptionAnimation ? 'animate-description' : '')
+        style={
+          isLoaded
+            ? {
+              animation: 'rightToLeftAnimation 1s ease-in-out 0.8s',
+              transform: 'translate(0)',
+              transitionDelay: '0.8s',
+            }
+            : { transform: 'translate(-300%)' }
         }
+        className="hero-desc"
       >
         <div className="my-6">A developer who </div>
-        <div className="md:text-[3rem] text-[1.5rem] sm:text-[2.5rem]">Bridges the gap between</div>
+        <div className="md:text-[3rem] text-[1.5rem] sm:text-[2.5rem]">
+          Bridges the gap between
+        </div>
         <div className="md:text-[3rem] text-[1.5rem] sm:text-[2.5rem]">
           code & <span className="text-clr-2">creativity</span> ...
         </div>
@@ -60,10 +62,16 @@ const About = ({ showText }) => {
         </div>
       </div>
       <div
-        className={
-          'text-[1.25rem] md:text-[2rem] sm:text-[1.5rem] text-clr-2 space-x-2 flex translate-x-[-300%] ' +
-          (showTextAnimation ? 'animate-text' : '')
+        style={
+          isLoaded
+            ? {
+              animation: 'rightToLeftAnimation 1s ease-in-out 1.2s',
+              transform: 'translate(0)',
+              transitionDelay: '1.2s',
+            }
+            : { transform: 'translate(-300%)' }
         }
+        className="text-[1.25rem] md:text-[2rem] sm:text-[1.5rem] text-clr-2 space-x-2 flex"
       >
         <div className="text-white min-w-max">I'm a </div>
         <div className="typed-out-container inline-block">
