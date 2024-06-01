@@ -140,15 +140,12 @@ const Projects = () => {
             tech={protfolio.tech}
           />
         </SwiperSlide>
-        {/* <SwiperSlide> */}
-
-        {/* TODO fix youtube video pages */}
-        {/* TODO change iframe with screenshots */}
-        {/* TODO Add python projject j*/}
-        {/* TODO Add node scrapper j*/}
 
 
-        {/* <ProjectCard
+        <SwiperSlide>
+          {/* TODO Add my python project to the projects section */}
+          {/* TODO Add node scrapper */}
+          <ProjectCard
             cardTitle={youtubeClone.cardTitle}
             cardDescription={youtubeClone.cardDescription}
             projectUrl={youtubeClone.projectUrl}
@@ -156,8 +153,10 @@ const Projects = () => {
             cardNote={youtubeClone.cardNote}
             additionalClasses="bg-white"
             tech={youtubeClone.tech}
-          /> */}
-        {/* </SwiperSlide> */}
+          />
+        </SwiperSlide>
+
+
         <SwiperSlide>
           <ProjectCard
             cardTitle={photoTaggingApp.cardTitle}
