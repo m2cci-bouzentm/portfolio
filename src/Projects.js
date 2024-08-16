@@ -18,6 +18,11 @@ import reactRouter from './assets/skillset/reactrouter-original.svg';
 import swiperIcon from './assets/skillset/swiper-original.svg';
 import figmaIcon from './assets/skillset/figma-original.svg';
 import jsIcon from './assets/skillset/javascript-original.svg';
+import phpIcon from './assets/skillset/php-original.svg';
+import mysqlIcon from './assets/skillset/mysql-original.svg';
+import mongodbIcon from './assets/skillset/mongodb-original.svg';
+
+
 
 const demonicEmperor = {
   cardTitle: '🚀 Explore Demonic Emperor Reader',
@@ -34,6 +39,7 @@ const demonicEmperor = {
     'Tailwind CSS': tailwindcssIcon,
     Node: nodeIcon,
     Express: expressIcon,
+    MongoDb: mongodbIcon,
     Axios: axiosIcon,
     Git: gitIcon,
   },
@@ -70,21 +76,7 @@ const photoTaggingApp = {
     Git: gitIcon,
   },
 };
-const shoppingCart = {
-  cardTitle: '🚀 Shopping Cart',
-  cardDescription:
-    'Welcome to my React Shopping Cart app! 🎉 Browse, add to cart, and purchase with ease in this responsive single-page app. 🛍️ Features TypeScript for the first time, Tailwind for quick styling, and react-router-dom for seamless navigation. 🚀',
-  projectUrl: 'https://mohamed-24-03-2022.github.io/react-ts-shopping-cart/',
-  projectTitle: 'Shopping Cart',
-  tech: {
-    Js: jsIcon,
-    React: reactIcon,
-    TypeScript: tsIcon,
-    'Tailwind CSS': tailwindcssIcon,
-    'React Router': reactRouter,
-    Git: gitIcon,
-  },
-};
+
 const protfolio = {
   cardTitle: '🚀 My Portfolio',
   cardDescription:
@@ -98,6 +90,25 @@ const protfolio = {
     SwiperJS: swiperIcon,
     Git: gitIcon,
     Figma: figmaIcon,
+  },
+};
+
+const phpRestfulApi = {
+  cardTitle: '🚀 PHP restful API',
+  cardDescription: `🎉 Welcome to my PHP Restful API project! 🛍️ It's a responsive single-page app where you can browse, add, edit, or delete bands, albums, and music tracks with ease. The frontend is built with React (create vite) ⚛️, TypeScript 📝, and Tailwind CSS 🎨, while React Router 🚦 ensures smooth navigation. The backend API is crafted using vanilla PHP 🐘 and MySQL 🛢️, handling various HTTP verbs to interact with the data efficiently.`,
+  cardNote: "Note: The API uses HTTP, so you may need to enable unsafe content in your browser to get access to the data 🔐.",
+  tutorial: ['See how to do it', 'https://stackoverflow.com/a/24434461'],
+  projectUrl: 'https://php-restful-api.vercel.app/',
+  projectTitle: 'PHP restful API',
+  tech: {
+    Js: jsIcon,
+    React: reactIcon,
+    TypeScript: tsIcon,
+    'Tailwind CSS': tailwindcssIcon,
+    'React Router': reactRouter,
+    Git: gitIcon,
+    PHP: phpIcon,
+    mySql: mysqlIcon
   },
 };
 
@@ -170,11 +181,14 @@ const Projects = () => {
         </SwiperSlide>
         <SwiperSlide>
           <ProjectCard
-            cardTitle={shoppingCart.cardTitle}
-            cardDescription={shoppingCart.cardDescription}
-            projectUrl={shoppingCart.projectUrl}
-            projectTitle={shoppingCart.projectTitle}
-            tech={shoppingCart.tech}
+            cardTitle={phpRestfulApi.cardTitle}
+            cardDescription={phpRestfulApi.cardDescription}
+            projectUrl={phpRestfulApi.projectUrl}
+            projectTitle={phpRestfulApi.projectTitle}
+            cardNote={phpRestfulApi.cardNote}
+            tutorial={phpRestfulApi.tutorial}
+            additionalClasses="bg-white"
+            tech={phpRestfulApi.tech}
           />
         </SwiperSlide>
       </Swiper>

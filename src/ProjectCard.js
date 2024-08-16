@@ -8,6 +8,7 @@ const ProjectCard = ({
   projectUrl,
   projectTitle,
   cardNote,
+  tutorial,
   additionalClasses,
   tech,
 }) => {
@@ -26,7 +27,8 @@ const ProjectCard = ({
       </a>
       <div className="project-description text-[1rem] sm:text-[1.25rem]">
         <p>{cardDescription}</p>
-        {cardNote && <p className="!m-2 text-[1.2rem]">{cardNote}</p>}
+        {cardNote && <p className="!m-2 text-[1rem] sm:text-[1.2rem]">{cardNote}</p>}
+        {tutorial && <a href={tutorial[1]} target='_blank' className="!m-4 sm:text-[1.1rem] underline" rel="noreferrer">{tutorial[0]}</a>}
       </div>
       <iframe
         className={

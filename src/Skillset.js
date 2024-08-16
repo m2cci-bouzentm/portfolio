@@ -7,8 +7,9 @@ import nodeIcon from './assets/skillset/nodejs-original-wordmark.svg';
 import expressIcon from './assets/skillset/express-original.svg';
 import mongodbIcon from './assets/skillset/mongodb-original.svg';
 import phpIcon from './assets/skillset/php-original.svg';
+import mysqlIcon from './assets/skillset/mysql-original.svg';
+// import postgresqlIcon from './assets/skillset/postgresql-original.svg';
 // import laravelIcon from './assets/skillset/laravel-original.svg';
-import postgresqlIcon from './assets/skillset/postgresql-original.svg';
 import npmIcon from './assets/skillset/npm-original-wordmark.svg';
 import webpackIcon from './assets/skillset/webpack-original.svg';
 import tailwindcssIcon from './assets/skillset/tailwindcss-original.svg';
@@ -54,7 +55,8 @@ const Skillset = () => {
           className="invert"
         />
         <img src={mongodbIcon} alt="mongodb-icon" title="MongoDB" />
-        <img src={postgresqlIcon} alt="postgresql-icon" title="Postgresql" />
+        {/* <img src={postgresqlIcon} alt="postgresql-icon" title="Postgresql" /> */}
+        <img src={mysqlIcon} alt="mysql-icon" title="mySql" />
         <img src={phpIcon} alt="php-icon" title="PHP" />
         {/* <img src={laravelIcon} alt="laravel-icon" title="Laravel" /> */}
         <img src={npmIcon} alt="npm-icon" title="NPM" />
