@@ -128,7 +128,7 @@ const Projects = () => {
         modules={[Pagination, Autoplay]}
         pagination={{ clickable: true }}
         autoplay={{
-          delay: 10000,
+          delay: 5000,
           disableOnInteraction: false,
         }}
         loop={true}
