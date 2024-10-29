@@ -101,7 +101,7 @@ const Nav = ({ isMobileMenuOpen, setIsMobileMenuOpen }) => {
 
       <div className="github-logo mx-2 sm:mx-0">
         <a
-          href="https://github.com/Mohamed-24-03-2022"
+          href="https://github.com/m2cci-bouzentm"
           target="_blank"
           rel="noreferrer"
         >

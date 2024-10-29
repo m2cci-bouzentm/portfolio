@@ -30,7 +30,7 @@ const Contact = () => {
       <div className="flex space-x-4 text-clr-2 text-[2rem]">
         <a
           target="_blank"
-          href="https://github.com/Mohamed-24-03-2022"
+          href="https://github.com/m2cci-bouzentm"
           rel="noreferrer"
         >
           <FaGithub />

@@ -46,7 +46,7 @@ const ProjectCard = ({
               src={tech[techName]}
               alt={`${techName.replace(' ', '')}-icon`}
               title={techName}
-              className={'w-[60px] ' + (techName === 'Express' ? 'invert' : '')}
+              className={'w-[40px] md:w-[60px] ' + (techName === 'Express' || techName === 'Socket.io' ? 'invert' : '')}
             />
           );
         })}

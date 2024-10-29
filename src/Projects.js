@@ -11,7 +11,7 @@ import expressIcon from './assets/skillset/express-original.svg';
 import tailwindcssIcon from './assets/skillset/tailwindcss-original.svg';
 import materialuiIcon from './assets/skillset/materialui-original.svg';
 import gitIcon from './assets/skillset/git-original-wordmark.svg';
-import firebaseIcon from './assets/skillset/firebase-original.svg';
+import prismaIcon from './assets/skillset/prisma-original.svg';
 import tsIcon from './assets/skillset/typescript-original.svg';
 import axiosIcon from './assets/skillset/axios-plain-wordmark.svg';
 import reactRouter from './assets/skillset/reactrouter-original.svg';
@@ -20,7 +20,10 @@ import figmaIcon from './assets/skillset/figma-original.svg';
 import jsIcon from './assets/skillset/javascript-original.svg';
 import phpIcon from './assets/skillset/php-original.svg';
 import mysqlIcon from './assets/skillset/mysql-original.svg';
+import postgresqlIcon from './assets/skillset/postgresql-original.svg';
 import mongodbIcon from './assets/skillset/mongodb-original.svg';
+import viteIcon from './assets/skillset/vitejs-original.svg';
+import socketioIcon from './assets/skillset/socketio-original-wordmark.svg';
 
 
 
@@ -49,7 +52,7 @@ const youtubeClone = {
   cardDescription:
     'For this project, I used React ⚛️, Tailwind CSS 🎨, Firebase 🔐, React Context API 📋, React Router 🚦, React Icons 🖼️, Material UI 🛠️, and YouTube API v3 📺. Features include viewing popular videos 🌍, searching 🔍, watching ▶️, viewing statistics 📊, comments 💬, and related videos 📽️.',
   cardNote: "Note: It's not mobile-friendly 📱.",
-  projectUrl: 'https://mohamed-24-03-2022.github.io/youtube-clone/',
+  projectUrl: 'https://m2cci-bouzentm.github.io/youtube-clone/',
   projectTitle: 'Youtube Clone',
   tech: {
     Js: jsIcon,
@@ -61,22 +64,6 @@ const youtubeClone = {
     Git: gitIcon,
   },
 };
-const photoTaggingApp = {
-  cardTitle: "🚀 Where's Waldo? Photo Tagging App",
-  cardDescription:
-    "This project turns the classic Where's Waldo? game into a web adventure! Users hunt for specific characters in a bustling image. Click to select characters, get instant feedback, and race against the clock. Developed with HTML, CSS, JavaScript, React.js, Tailwind and firebase, it's a fun, interactive experience! 🎯🔍",
-  cardNote: "Note: It's not mobile-friendly 📱.",
-  projectUrl: 'https://mohamed-24-03-2022.github.io/photo-tagging-app/',
-  projectTitle: 'Photo Tagging App',
-  tech: {
-    Js: jsIcon,
-    React: reactIcon,
-    'Tailwind CSS': tailwindcssIcon,
-    Firebase: firebaseIcon,
-    Git: gitIcon,
-  },
-};
-
 const protfolio = {
   cardTitle: '🚀 My Portfolio',
   cardDescription:
@@ -93,11 +80,13 @@ const protfolio = {
   },
 };
 
+
+
 const phpRestfulApi = {
   cardTitle: '🚀 PHP restful API',
   cardDescription: `🎉 Welcome to my PHP Restful API project! 🛍️ It's a responsive single-page app where you can browse, add, edit, or delete bands, albums, and music tracks with ease. The frontend is built with React (create vite) ⚛️, TypeScript 📝, and Tailwind CSS 🎨, while React Router 🚦 ensures smooth navigation. The backend API is crafted using vanilla PHP 🐘 and MySQL 🛢️, handling various HTTP verbs to interact with the data efficiently.`,
-  cardNote: "Note: The API uses HTTP, so you may need to enable unsafe content in your browser to get access to the data 🔐.",
-  tutorial: ['See how to do it', 'https://stackoverflow.com/a/24434461'],
+  // cardNote: "Note: The API uses HTTP, so you may need to enable unsafe content in your browser to get access to the data 🔐.",
+  // tutorial: ['See how to do it', 'https://stackoverflow.com/a/24434461'],
   projectUrl: 'https://php-restful-api.vercel.app/',
   projectTitle: 'PHP restful API',
   tech: {
@@ -111,6 +100,43 @@ const phpRestfulApi = {
     mySql: mysqlIcon
   },
 };
+const blogWebsite = {
+  cardTitle: '📝 Blog Website',
+  cardDescription: `🌟 Welcome to the Blog Website project! This project consists of two separate applications: one for authors to manage blog posts and another for users to view and comment on posts. Both applications use a Node.js Express-based API for backend services. The frontend is built with React ⚛️, TypeScript 📝, and Tailwind CSS 🎨, while React Router 🚦 ensures smooth navigation. The backend API is crafted using Node.js and Express 🚀, with Prisma for database management and JWT for authentication.`,
+  projectUrl: 'https://blog-api-front-author.vercel.app',
+  projectTitle: 'Blog Website',
+  tech: {
+    React: reactIcon,
+    TypeScript: tsIcon,
+    'Tailwind CSS': tailwindcssIcon,
+    'React Router': reactRouter,
+    Node: nodeIcon,
+    Express: expressIcon,
+    PostgreSQL: postgresqlIcon,
+    Prisma: prismaIcon,
+    Git: gitIcon
+  },
+};
+const nodeMessagingApp = {
+  cardTitle: '💬 Node Messaging App',
+  cardDescription: `📱 Welcome to the Node Messaging App project! This is a messaging application built with a React frontend and a Node.js backend. The frontend uses TypeScript and Vite for a fast development experience, while the backend uses Prisma for database management. Key features include real-time messaging with socket.io, user authentication, group and individual conversations, file uploads, and message notifications. The UI is mobile-friendly and built with Tailwind CSS and Material UI.`,
+  projectUrl: 'https://node-messaging-app.vercel.app',
+  projectTitle: 'Node Messaging App',
+  tech: {
+    React: reactIcon,
+    TypeScript: tsIcon,
+    Vite: viteIcon,
+    'Tailwind CSS': tailwindcssIcon,
+    'Material UI': materialuiIcon,
+    Node: nodeIcon,
+    Express: expressIcon,
+    PostgreSQL: postgresqlIcon,
+    Prisma: prismaIcon,
+    'Socket.io': socketioIcon,
+    Git: gitIcon
+  },
+};
+
 
 const Projects = () => {
   return (
@@ -128,55 +154,34 @@ const Projects = () => {
         modules={[Pagination, Autoplay]}
         pagination={{ clickable: true }}
         autoplay={{
-          delay: 5000,
-          disableOnInteraction: false,
+          delay: 6000,
+          disableOnInteraction: true,
         }}
         loop={true}
       >
-        <SwiperSlide>
-          <ProjectCard
-            cardTitle={demonicEmperor.cardTitle}
-            cardDescription={demonicEmperor.cardDescription}
-            projectUrl={demonicEmperor.projectUrl}
-            projectTitle={demonicEmperor.projectTitle}
-            tech={demonicEmperor.tech}
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <ProjectCard
-            cardTitle={protfolio.cardTitle}
-            cardDescription={protfolio.cardDescription}
-            projectUrl={protfolio.projectUrl}
-            projectTitle={protfolio.projectTitle}
-            tech={protfolio.tech}
-          />
-        </SwiperSlide>
 
 
         <SwiperSlide>
-          {/* TODO Add my python project to the projects section */}
-          {/* TODO Add node scrapper */}
           <ProjectCard
-            cardTitle={youtubeClone.cardTitle}
-            cardDescription={youtubeClone.cardDescription}
-            projectUrl={youtubeClone.projectUrl}
-            projectTitle={youtubeClone.projectTitle}
-            cardNote={youtubeClone.cardNote}
+            cardTitle={nodeMessagingApp.cardTitle}
+            cardDescription={nodeMessagingApp.cardDescription}
+            projectUrl={nodeMessagingApp.projectUrl}
+            projectTitle={nodeMessagingApp.projectTitle}
+            cardNote={nodeMessagingApp.cardNote}
+            tutorial={nodeMessagingApp.tutorial}
             additionalClasses="bg-white"
-            tech={youtubeClone.tech}
+            tech={nodeMessagingApp.tech}
           />
         </SwiperSlide>
-
-
         <SwiperSlide>
           <ProjectCard
-            cardTitle={photoTaggingApp.cardTitle}
-            cardDescription={photoTaggingApp.cardDescription}
-            projectUrl={photoTaggingApp.projectUrl}
-            projectTitle={photoTaggingApp.projectTitle}
-            cardNote={photoTaggingApp.cardNote}
+            cardTitle={blogWebsite.cardTitle}
+            cardDescription={blogWebsite.cardDescription}
+            projectUrl={blogWebsite.projectUrl}
+            projectTitle={blogWebsite.projectTitle}
+            cardNote={blogWebsite.cardNote}
             additionalClasses="bg-white"
-            tech={photoTaggingApp.tech}
+            tech={blogWebsite.tech}
           />
         </SwiperSlide>
         <SwiperSlide>
@@ -191,6 +196,39 @@ const Projects = () => {
             tech={phpRestfulApi.tech}
           />
         </SwiperSlide>
+
+
+
+        <SwiperSlide>
+          <ProjectCard
+            cardTitle={demonicEmperor.cardTitle}
+            cardDescription={demonicEmperor.cardDescription}
+            projectUrl={demonicEmperor.projectUrl}
+            projectTitle={demonicEmperor.projectTitle}
+            tech={demonicEmperor.tech}
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <ProjectCard
+            cardTitle={youtubeClone.cardTitle}
+            cardDescription={youtubeClone.cardDescription}
+            projectUrl={youtubeClone.projectUrl}
+            projectTitle={youtubeClone.projectTitle}
+            cardNote={youtubeClone.cardNote}
+            additionalClasses="bg-white"
+            tech={youtubeClone.tech}
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <ProjectCard
+            cardTitle={protfolio.cardTitle}
+            cardDescription={protfolio.cardDescription}
+            projectUrl={protfolio.projectUrl}
+            projectTitle={protfolio.projectTitle}
+            tech={protfolio.tech}
+          />
+        </SwiperSlide>
+
       </Swiper>
     </div>
   );

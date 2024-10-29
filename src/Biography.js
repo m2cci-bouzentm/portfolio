@@ -40,13 +40,12 @@ const Biography = () => {
         Biography
       </h1>
       <p className="translate-x-[-300%]">
-        I'm a 22 years old full-stack developer & a software engineer hooked on
+        I'm a 23 years old full-stack developer & a software engineer hooked on
         mastering the latest in web tech and currently interested in Web
         Development. 💡☁️
       </p>
       <p className="translate-x-[-300%]">
-        Kickstarted coding at a tender age of 16 with C, now I craft
-        cutting-edge web projects, using the most trending web technologies.🚀
+      Discovered programming through my passion for gaming, which led me to start coding and embark on my journey in web development. Now, I craft cutting-edge web projects using the latest web technologies. 🚀
       </p>
       <p className="translate-x-[-300%]">
         I have a deep sense of curiosity and an insatiable desire for knowledge.

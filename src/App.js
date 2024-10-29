@@ -1,6 +1,6 @@
 import Nav from './Nav';
 import Main from './Main';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
 function App() {
   const [mouseCoor, setMouseCoor] = useState({ x: -100, y: -100 });

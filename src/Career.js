@@ -1,21 +1,21 @@
 import React from 'react';
-import esgiLogo from './assets/esgi.webp';
+import ugaLogo from './assets/Logo_Université_Grenoble_Alpes_2020.svg.png';
 import unicaenLogo from './assets/unicaen.svg';
 import CareerCard from './CareerCard';
 
-const esgiInfo = {
-  logo: esgiLogo,
-  schoolName: 'Ecole Supérieure de Génie Informatique',
-  schoolDescription: 'Lille - France | (September 2024 - Current)',
-  bio: "Admitted to the 2nd year apprenticeship program in computer science, pursuing a Bachelor's degree, starting in September 2024.",
-  website: 'https://www.esgi.fr/',
-  websiteText: 'Visit The Official ESGI School Website',
+const grenobleInfo = {
+  logo: ugaLogo,
+  schoolName: 'Grenoble Alpes University',
+  schoolDescription: 'Grenoble - France | (September 2024 - June 2025)',
+  bio: "I am a student at Grenoble Alpes University, diligently pursuing my master's degree. Currently in my final year, and  eager to apply my skills and knowledge to real-world projects and make a meaningful impact.",
+  website: 'https://www.univ-grenoble-alpes.fr/',
+  websiteText: 'Visit The Official Grenoble Alpes University Website',
 };
 const unicaenInfo = {
   logo: unicaenLogo,
   schoolName: 'University Of Caen Normandy',
   schoolDescription: 'Caen - France | (September 2023 - June 2024)',
-  bio: "I am a student at the University of Caen Normandy, diligently pursuing my Bachelor's degree. I am currently in my first year and already gathering an interesting skillset !",
+  bio: "I completed the first year of my Bachelor's degree at the University of Caen Normandy, where I learned the fundamentals of web development, algorithms, and object-oriented programming (OOP).",
   website: 'https://www.unicaen.fr/',
   websiteText: 'Visit The University Website',
 };
@@ -30,8 +30,8 @@ const Career = () => {
         Career
       </h1>
 
-      <CareerCard info={esgiInfo} />
-      <CareerCard info={unicaenInfo} />
+      <CareerCard info={grenobleInfo} />
+      {/* <CareerCard info={unicaenInfo} /> */}
       <div className="spacer py-2"></div>
     </div>
   );
