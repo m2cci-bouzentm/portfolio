@@ -18,7 +18,7 @@ import tsIcon from './assets/skillset/typescript-original.svg';
 import JavaIcon from './assets/skillset/java-original.svg';
 import springIcon from './assets/skillset/spring-original.svg';
 
-// Icons by devicons github.com/devicons/devicon
+//****** Icons by devicons github.com/devicons/devicon *******//
 
 const Skillset = () => {
   return (
