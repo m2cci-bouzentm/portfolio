@@ -31,7 +31,7 @@ const About = ({ showText }) => {
   return (
     <div
       id="about"
-      className="hero-sect w-[90%] sm:w-[80%] lg:max-w-[55%] xl:px-48 lg:px-[7%] sm:px-[8%] px-[5%] py-20 mx-auto space-y-20 font-extrabold relative z-10"
+      className="hero-sect w-[95%] sm:w-[85%] lg:max-w-[60%] py-20 mx-auto space-y-20 font-extrabold relative z-10"
     >
       <div className="hero-text my-8 relative pt-8 sm:pt-0 text-[2.5rem] sm:text-[3rem] lg:text-[5rem]">
         <span className="inline-block translate-x-[-300%] animate-text">Hello, I'm&nbsp;</span>
